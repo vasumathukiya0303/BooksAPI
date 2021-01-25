@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 const route = require('./route');
 
 //connect to mongodb
-mongoose.connect("mongodb+srv://vasu:2001@cluster0.vr1db.mongodb.net/student?retryWrites=true&w=majority",{useNewUrlParser:true,useUnifiedTopology:true}).then(
+mongoose.connect("mongodb+srv://vasu:1002@cluster0.vr1db.mongodb.net/student?retryWrites=true&w=majority",{useNewUrlParser:true,useUnifiedTopology:true}).then(
     ()=>{
         const app = express();
         app.use("/api",route);
